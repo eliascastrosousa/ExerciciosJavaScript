@@ -14,21 +14,18 @@
     
     <header class="cabecalho">
         <h1>Curso PHP </h1>
-        <h2>Indice dos exercicios</h2>
+        <h2>Visualização do Exercicio</h2>
     </header>
+
     <nav class="navegacao">
-        <a href="#" class="verde">
-        Sem formatação
-        </a>
-        <a href="index.php" class="vermelho">
-        Voltar
-        </a>
+        <a href="#" class="verde">Sem formatação</a>
+        <a href="index.php" class="vermelho">Voltar</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
-            <nav class="modulos">
-
-            </nav>
+            <?php 
+                include('teste/teste.php') 
+            ?>
         </div>
     </main>
 
