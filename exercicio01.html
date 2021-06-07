@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estiloexercicio01.css">
+    <link rel="icon" href="imagens/sinal01.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Exercicios JavaScript | Radar de Trânsito</title>
+</head>
+
+<body class="exercicio">
+
+    <header class="cabecalho">
+        <h1>Exercicios JavaScript | Radar de Trânsito </h1>
+    </header>
+
+    <main class="principal">
+        <div class="conteudo">
+            <h3>Digite a Velocidade do Carro: </h3>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Km/h</span>
+                <input type="number" class="form-control" id="km">
+            </div>
+            <button type="button" class="btn btn-outline-warning" onclick="confirmar()">Confirmar </button>
+            <a href="index.html" class="btn btn-outline-primary"> Voltar ao Menu </a>
+            <br><br>
+            <h4 id="msg">
+                Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80Km/h, mostre uma mensagem
+                dizendo que ele foi multado. A multa vai custar R$7,00 por cada Km acima do limite.
+            </h4>
+            <br><br>
+            <div id="foto">
+                <img id="imagem" src="imagens/sinal01.png">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="scripts/script01.js"></script>
+
+
+
+
+</body>
+
+</html>

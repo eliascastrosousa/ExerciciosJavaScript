@@ -7,16 +7,15 @@ body {
     height: 100vh; /* unidade absoluta (vh), aqui ele divide a altura em 100 partes, entao eu pedi para usar 100% da altura do body */
     margin: 0px; /* zerar a margin do body*/
     display: grid; /* especifica a disposição do elemento HTML, aqui no caso vou usar o layout grade(grid) */ 
-    grid-template-rows: 120px 1fr 60px ; /* aqui estou definindo 3 linhas, a primeira com 120 pixels, a ultima com 60px e a do meio é 1fr(fragmento) que significa que ele vai ocpar todo o espaço restante  */
-    grid-template-columns: 1fr; /* aqui estou inidicando que vai ter apenas uma coluna, vi opucar inteiro (1fr)  */
+    grid-template-rows: 1fr ; /* aqui estou definindo 3 linhas, a primeira com 120 pixels, a ultima com 60px e a do meio é 1fr(fragmento) que significa que ele vai ocpar todo o espaço restante  */
+    grid-template-columns: 1fr; /* aqui estou inidicando que vai ter apenas uma coluna, vai ocupar inteiro (1fr)  */
     grid-template-areas: "cabecalho" "principal" "rodape"; /*aqui eu estou indicando cada area que vai ter os tamanhos definidos no template rows, tambem sao os mesmas classes definidas no html*/
 
 }
-
 .cabecalho {
     grid-area: cabecalho; /* aqui eu estou indicando que esta propriedade é a que foi criada anteriormente, dai entao ele vai importar o tamanho que foi selecionado  em grid template rows*/
     background-color: #1867c0; 
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,35 +26,17 @@ body {
 }
 .cabecalho > h1 {
     margin: 0px;
-    font-weight: 300;
-    font-size: 2.8rem;
+    font-weight: 600;
+    font-size: 2.0rem;
 }
-
-.cabecalho > h2 {
-    margin: 0px;
-    font-weight: 200;
-    font-size: 1.6rem ;
-}
-
 
 .principal {
     grid-area: principal;
-    height: calc(100vh - 180px); /* aqui eu indico que a altura do area principal vai ocupar tudo, menos o tamanho 180pixels, que é o tamanho do rodape com o cabeçalho*/
+    height: calc(100vh - 60px); /* aqui eu indico que a altura do area principal vai ocupar tudo, menos o tamanho 180pixels, que é o tamanho do rodape com o cabeçalho*/
     background-color: #f0f0f0;
     padding: 20px;
 }
-.rodape {
-    grid-area: rodape;
-    background-color: #fff; 
-    /* position: sticky;
-       bottom: 0px; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 1.2rem;
-    padding-right: 20px;
-    color: #444;
-}
+
 .conteudo {
     position: relative;
     height: 100%;
@@ -64,40 +45,22 @@ body {
     padding: 20px;
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
 }
-.modulos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.modulo {
-    flex-basis: 32%;
 
-}
 .modulo > h3 {
     margin: 0px;
     color: white;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
     background-color: blue;
 }
-
-.modulo > ul {
-    margin: 0px;
-    padding: 10px;
-    list-style: none;
+#imagem { 
+    text-align: center;
+    align-items: center;
+    width: 200px;  
+    height: 200px;
+    
 }
-.modulo > ul > li {
-    padding: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-
-}
-.modulo > ul > li > a {
-    display: flex;
-    text-decoration: none;
-    color: rgb(27, 27, 27);
-}
-.modulo > ul > li:hover {
-    background-color: #EEE;
+#foto {
+    text-align: center;
 }
