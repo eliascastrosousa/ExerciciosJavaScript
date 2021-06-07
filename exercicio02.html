@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estiloexercicio01.css">
+    <link rel="icon" href="imagens/icone02.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Exercicios JavaScript | Pintando Parede</title>
+</head>
+
+<body class="exercicio">
+
+    <header class="cabecalho">
+        <h1>Exercicios JavaScript | Pintando Parede </h1>
+    </header>
+
+    <main class="principal">
+        <div class="conteudo">
+            <h3>Digite a largura e a altura da parede em metros: </h3>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Largura: </span>
+                <input type="number" class="form-control" id="largura">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Altura: </span>
+                <input type="number" class="form-control" id="altura">
+            </div>
+            <button type="button" class="btn btn-outline-warning" onclick="confirmar()">Confirmar </button>
+            <a href="index.html" class="btn btn-outline-primary"> Voltar ao Menu </a>
+            <br><br>
+            <h4 id="msg">
+                Faça um programa que leia a largura e a altura de uma parede em metros, calcule a sua área e a quantidade de tinta necessária para pintá-la, sabendo que cada litro de tinta pinta uma área de 4 metros quadrados.
+            </h4>
+            <br><br>
+            <div id="foto">
+                <img id="imagem" src="imagens/tinta02.png">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="scripts/script02.js"></script>
+
+
+
+
+</body>
+
+</html>
