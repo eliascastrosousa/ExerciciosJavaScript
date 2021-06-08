@@ -1,2 +1,2 @@
 # curso-php
- Aulas e exercicios do curso de PHP ministrado pela COD3R na Udemy
+ Exercicios feitos para estudar Desenvolvimento Web principalmente JavaScript
